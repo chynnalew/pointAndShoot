@@ -40,7 +40,12 @@ let gameOver = false;
 
 function preload ()
 {
-  this.load.image()
+  this.load.image('background', 'assets/space-background.png');
+  this.load.image('crosshair', 'assets/crosshair.png');
+  this.load.audio('shot', 'assets/laserSmall.ogg');
+  this.load.audio('music', 'assets/Foggy_Woods.mp3');
+  this.load.image('fish','assets/fish.jpg');
+  this.load.spritesheet('explode', 'assets/Explosion.png', {frameWidth: 100, frameHeight: 100})
 }
 
 
